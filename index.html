@@ -10,11 +10,11 @@
 <body>
     <nav>
         <div class="nav-wrapper grey">
-            <h4 href="#" class="brand-logo center">List of Best Web Developement Courses and Certificates </h4>
+            <h4 href="#" class="brand-logo center "> Web Developement Courses </h4>
         </div>
       </nav>
       
-    <div class="container">
+    <div class="container" id="content">
         <span> By John Nasimba</span>
        <p>I conducted my research online to see which are the best courses under $50 per month.
         Among the list are courses from <a href="https://www.lynda.com/" target="_blank" rel="noopener noreferrer"> Lynda.com</a>( A learning institute owned by LinkedIn),
@@ -142,11 +142,23 @@
         a:hover{
             text-decoration: underline;
         }
+       .nav-wrapper{
+           height: 4px;
+       }
 
        .nav-wrapper span{
            font-size: 20px;
            font-style: italic;
 
+       }
+       @media only screen and (max-width: 800px) {
+          
+           nav .nav-wrapper {
+               height: 150px;            
+           }
+           #content {
+               margin-top: 100px;
+           }
        }
     </style>
    
